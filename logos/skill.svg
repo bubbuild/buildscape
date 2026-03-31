@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" role="img" aria-labelledby="title desc">
+  <title id="title">Skill</title>
+  <desc id="desc">Generic skill logo for the Bub landscape.</desc>
+  <rect width="160" height="100" rx="20" fill="#163748" />
+  <path d="M34 26h44a10 10 0 0 1 10 10v40a10 10 0 0 1-10 10H34a10 10 0 0 1-10-10V36a10 10 0 0 1 10-10Z" fill="#eef5f7"/>
+  <path d="M82 26h44a10 10 0 0 1 10 10v40a10 10 0 0 1-10 10H82V26Z" fill="#5f9eb2"/>
+  <path d="M80 36v40" stroke="#ff7742" stroke-width="8" stroke-linecap="round" />
+</svg>

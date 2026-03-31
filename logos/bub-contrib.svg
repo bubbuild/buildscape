@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">bub-contrib</title>
+  <desc id="desc">Shared ecosystem logo for Bub contrib packages.</desc>
+  <rect width="180" height="180" rx="36" fill="#10212d" />
+  <circle cx="48" cy="52" r="16" fill="#ff7742" />
+  <circle cx="132" cy="52" r="16" fill="#5f9eb2" />
+  <circle cx="48" cy="128" r="16" fill="#67c587" />
+  <circle cx="132" cy="128" r="16" fill="#eef5f7" />
+  <circle cx="90" cy="90" r="20" fill="#18384a" stroke="#dce8ed" stroke-width="4" />
+  <path d="M58 60l20 18M122 60l-20 18M58 120l20-18M122 120l-20-18" fill="none" stroke="#8bb8c7" stroke-linecap="round" stroke-width="8" />
+  <path d="M84 90h12M90 84v12" stroke="#ff7742" stroke-linecap="round" stroke-width="6" />
+</svg>

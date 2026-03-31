@@ -1,0 +1,84 @@
+# Landscape2 settings
+#
+# Bub ecosystem landscape settings.
+#
+# Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/settings.yml
+
+foundation: Bub
+
+url: http://127.0.0.1:8000
+
+colors:
+  color1: "rgba(22, 90, 118, 1)"
+  color2: "rgba(255, 119, 66, 1)"
+  color3: "rgba(95, 158, 178, 1)"
+  color4: "rgba(14, 49, 64, 0.82)"
+  color5: "rgba(27, 117, 150, 0.72)"
+  color6: "rgba(16, 71, 93, 0.72)"
+  color7: "rgba(226, 236, 241, 1)"
+
+description: A landscape for Bub projects, websites, plugins, skills, adjacent projects, and downstream platforms.
+
+featured_items:
+  - field: subcategory
+    options:
+      - value: Core Runtime
+        order: 1
+      - value: Ecosystem Infrastructure
+        order: 2
+      - value: Product & Reference
+        order: 3
+      - value: Channels
+        order: 4
+      - value: Runtime & Workflow
+        order: 5
+      - value: Tools
+        order: 6
+      - value: Storage
+        order: 7
+      - value: Core Operations
+        order: 8
+      - value: Python Craft
+        order: 9
+
+footer:
+  links:
+    github: "https://github.com/bubbuild/bub"
+    homepage: "https://bub.build"
+    linkedin: "https://www.linkedin.com"
+  logo: "logos/brand.svg"
+  text: |
+    Bub ecosystem landscape prototype generated with landscape2.
+
+grid_items_size: small
+
+groups:
+  - name: Official
+    alias: official
+    categories:
+      - Projects
+      - Websites
+      - Built-in Skills
+  - name: Extensions
+    alias: extensions
+    categories:
+      - Plugins
+      - Selected Skills
+  - name: Friends & Downstream
+    alias: network
+    categories:
+      - Friends
+      - Distributions
+
+header:
+  links:
+    github: "https://github.com/bubbuild/bub"
+  logo: "logos/brand.svg"
+  motd: |
+    "Content first, emphasis second."
+
+hide_organization_section_in_projects: true
+
+screenshot_width: 1600
+
+view_mode: grid

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" role="img" aria-labelledby="title desc">
+  <title id="title">Distribution</title>
+  <desc id="desc">Generic distribution logo for the Bub landscape.</desc>
+  <rect width="160" height="100" rx="20" fill="#163243" />
+  <path d="M28 72 58 28h18L46 72H28Zm42 0 24-44h18L88 72H70Zm42 0 12-22h18l-12 22h-18Z" fill="#ff7742" />
+  <rect x="120" y="26" width="18" height="16" rx="4" fill="#5f9eb2" />
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">Feishu</title>
+  <desc id="desc">Multi-color folded logo for Feishu integrations.</desc>
+  <rect width="180" height="180" rx="36" fill="#f6f8fb" />
+  <path d="M68 36c19 0 42 9 54 24l-25 16c-7-9-18-14-30-14-17 0-31 9-39 22 4-28 18-48 40-48Z" fill="#1f7cff" />
+  <path d="M122 60c18 8 30 25 30 48 0 7-1 14-4 20l-32-18c2-4 3-7 3-11 0-10-6-20-17-23l20-16Z" fill="#00b96b" />
+  <path d="M48 74c10 0 19 4 26 12L41 138c-9-8-15-18-17-32 2-20 11-32 24-32Z" fill="#2f54eb" />
+  <path d="M74 86c6 7 10 16 10 26 0 12-5 23-14 31-10 1-21-1-30-5l34-52Z" fill="#ff8f1f" />
+</svg>

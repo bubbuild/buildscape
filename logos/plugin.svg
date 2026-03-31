@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" role="img" aria-labelledby="title desc">
+  <title id="title">Plugin</title>
+  <desc id="desc">Generic plugin logo for the Bub landscape.</desc>
+  <rect width="160" height="100" rx="20" fill="#102b38" />
+  <path d="M52 22h24v16h8V22h24v16a12 12 0 0 1 12 12v12h-16v16H56V62H40V50a12 12 0 0 1 12-12V22Z" fill="#ff7742"/>
+  <rect x="64" y="62" width="32" height="16" rx="6" fill="#dce8ed" />
+</svg>

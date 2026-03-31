@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" role="img" aria-labelledby="title desc">
+  <title id="title">Project</title>
+  <desc id="desc">Generic project logo for the Bub landscape.</desc>
+  <rect width="160" height="100" rx="20" fill="#153748" />
+  <rect x="18" y="18" width="56" height="64" rx="10" fill="#5f9eb2" />
+  <rect x="86" y="18" width="56" height="28" rx="8" fill="#ff7742" />
+  <rect x="86" y="54" width="56" height="28" rx="8" fill="#dce8ed" />
+</svg>

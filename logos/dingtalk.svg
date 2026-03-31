@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">DingTalk</title>
+  <desc id="desc">Blue chat-shaped logo for DingTalk integrations.</desc>
+  <rect width="180" height="180" rx="36" fill="#e8f3ff" />
+  <path d="M40 92c0-28 23-50 52-50h34c8 0 14 6 14 14v30c0 8-6 14-14 14h-24l-30 24 8-24H54c-8 0-14-6-14-14V92Z" fill="#1677ff" />
+  <path d="M82 62l20 18-16 4 12 20-36-24 20-6Z" fill="#ffffff" />
+</svg>

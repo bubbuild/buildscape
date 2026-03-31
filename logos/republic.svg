@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title desc">
+  <title id="title">Republic</title>
+  <desc id="desc">Minimal Republic glyph inspired by tape and terminal output.</desc>
+  <rect width="180" height="180" rx="36" fill="#f5efe5" />
+  <rect x="24" y="28" width="132" height="124" rx="18" fill="#fffaf2" stroke="#191919" stroke-width="4" />
+  <circle cx="42" cy="46" r="5" fill="#191919" />
+  <circle cx="58" cy="46" r="5" fill="#7c7c7c" />
+  <circle cx="74" cy="46" r="5" fill="#c7c7c7" />
+  <path d="M48 90l16 14-16 14" fill="none" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+  <rect x="76" y="80" width="50" height="10" rx="5" fill="#191919" />
+  <rect x="76" y="98" width="36" height="10" rx="5" fill="#7c7c7c" />
+  <rect x="76" y="116" width="56" height="10" rx="5" fill="#c7c7c7" />
+</svg>

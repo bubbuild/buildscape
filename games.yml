@@ -1,0 +1,32 @@
+# Landscape2 games data
+#
+# Bub ecosystem quiz.
+#
+# Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/games.yml
+
+quiz:
+  questions:
+    - title: "Which item is the enterprise-oriented distribution of Bub?"
+      options:
+        - item: bubseek
+          correct: true
+        - item: Bub
+        - item: any-llm
+    - title: "Which of these is a selected remote skill rather than a Bub built-in skill?"
+      options:
+        - item: friendly-python
+          correct: true
+        - item: GitHub CLI
+        - item: Telegram
+    - title: "Which plugin provides web search tools for Bub?"
+      options:
+        - item: bub-discord
+        - item: bub-web-search
+          correct: true
+        - item: bub-session-prompt
+    - title: "Which website focuses on constructing context from tape?"
+      options:
+        - item: bub.build
+        - item: tape.systems
+          correct: true
+        - item: getrepublic.org

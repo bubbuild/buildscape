@@ -1,0 +1,50 @@
+:root {
+  --bub-item-name-bg: rgba(248, 250, 252, 0.96);
+  --bub-item-name-fg: #22313d;
+  --bub-item-name-border: rgba(34, 49, 61, 0.12);
+}
+
+html[data-theme='dark'] {
+  --bub-item-name-bg: rgba(24, 32, 39, 0.96);
+  --bub-item-name-fg: #f3f6f8;
+  --bub-item-name-border: rgba(255, 255, 255, 0.12);
+}
+
+[role='listitem'].card[data-bub-name-ready='1'] {
+  overflow: hidden;
+}
+
+[role='listitem'].card .bub-item-button {
+  padding-bottom: 1.35rem !important;
+}
+
+[role='listitem'].card.bigCard .bub-item-button {
+  padding-bottom: 1.8rem !important;
+}
+
+[role='listitem'].card .bub-item-name {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: block;
+  padding: 0.25rem 0.35rem;
+  border-top: 1px solid var(--bub-item-name-border);
+  background: var(--bub-item-name-bg);
+  color: var(--bub-item-name-fg);
+  font-size: 0.58rem;
+  line-height: 0.72rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+[role='listitem'].card.bigCard .bub-item-name {
+  padding: 0.35rem 0.5rem;
+  font-size: 0.74rem;
+  line-height: 0.92rem;
+}

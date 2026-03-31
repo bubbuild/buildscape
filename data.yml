@@ -1,0 +1,354 @@
+# Landscape2 data
+#
+# Bub ecosystem landscape.
+#
+# Reference documentation: https://github.com/cncf/landscape2/blob/main/docs/config/data.yml
+
+categories:
+  - name: Projects
+    subcategories:
+      - name: Core Runtime
+        items:
+          - name: Bub
+            homepage_url: https://bub.build
+            logo: bub.svg
+            description: Hook-first agent runtime for people and agents working in the same conversations.
+            repo_url: https://github.com/bubbuild/bub
+            license: Apache-2.0
+            extra:
+              documentation_url: https://bub.build
+              blog_url: https://bub.build/posts/
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "project"
+          - name: Republic
+            homepage_url: https://getrepublic.org
+            logo: republic.svg
+            description: Tape-first LLM client that records prompts, tools, results, and usage by default.
+            repo_url: https://github.com/bubbuild/republic
+            license: Apache-2.0
+            extra:
+              documentation_url: https://getrepublic.org
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "project"
+      - name: Ecosystem Infrastructure
+        items:
+          - name: bub-contrib
+            homepage_url: https://github.com/bubbuild/bub-contrib
+            logo: bub-contrib.svg
+            description: Shared repository for Bub plugins, contrib packages, and ecosystem tooling.
+            repo_url: https://github.com/bubbuild/bub-contrib
+            extra:
+              documentation_url: https://github.com/bubbuild/bub-contrib
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "ecosystem-repo"
+
+  - name: Websites
+    subcategories:
+      - name: Product & Reference
+        items:
+          - name: bub.build
+            homepage_url: https://bub.build
+            logo: bub.svg
+            description: Product site and documentation hub for Bub.
+            repo_url: https://github.com/bubbuild/bub
+            extra:
+              blog_url: https://bub.build/posts/
+              documentation_url: https://bub.build
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "website"
+          - name: tape.systems
+            homepage_url: https://tape.systems
+            logo: tape-systems.svg
+            description: Minimal reference site for context construction from tape and related extensions.
+            extra:
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "website"
+          - name: getrepublic.org
+            homepage_url: https://getrepublic.org
+            logo: republic.svg
+            description: Concepts, guides, and API reference for Republic.
+            repo_url: https://github.com/bubbuild/republic
+            extra:
+              documentation_url: https://getrepublic.org
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "website"
+
+  - name: Plugins
+    subcategories:
+      - name: Channels
+        items:
+          - name: bub-discord
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-discord
+            logo: discord.svg
+            description: Discord channel adapter for Bub message IO.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-discord
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-discord"
+          - name: bub-dingtalk
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-dingtalk
+            logo: dingtalk.svg
+            description: DingTalk Stream Mode channel adapter for Bub message IO.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-dingtalk
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-dingtalk"
+          - name: bub-feishu
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-feishu
+            logo: lark-suite.png
+            description: Feishu channel adapter for Bub message IO.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-feishu
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-feishu"
+          - name: bub-qq
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-qq
+            logo: qq.svg
+            description: QQ Open Platform channel adapter for Bub.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-qq
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-qq"
+          - name: bub-wechat
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wechat
+            logo: wechat.svg
+            description: WeChat channel adapter for Bub message IO.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wechat
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-wechat"
+          - name: bub-tg-feed
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tg-feed
+            logo: telegram.svg
+            description: AMQP-based Telegram feed channel adapter for Bub.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tg-feed
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-tg-feed"
+      - name: Runtime & Workflow
+        items:
+          - name: bub-codex
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-codex
+            logo: openai.svg
+            description: Delegates Bub model execution to the Codex CLI.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-codex
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-codex"
+          - name: bub-github-copilot
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-github-copilot
+            logo: github-copilot.svg
+            description: GitHub Copilot SDK-backed run_model plugin plus GitHub device-flow login support.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-github-copilot
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-github-copilot"
+          - name: bub-session-prompt
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-session-prompt
+            logo: session-prompt.svg
+            description: Session-specific system prompt plugin sourced from local Bub session state.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-session-prompt
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-session-prompt"
+      - name: Tools
+        items:
+          - name: bub-schedule
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-schedule
+            logo: calendar.svg
+            description: Scheduling channel and tools backed by APScheduler.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-schedule
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-schedule"
+          - name: bub-web-search
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-web-search
+            logo: search.svg
+            description: Web search tool package for Bub.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-web-search
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-web-search"
+      - name: Storage
+        items:
+          - name: bub-tapestore-redis
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-redis
+            logo: redis.svg
+            description: Redis-backed tape store plugin for Bub conversation history.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-redis
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-tapestore-redis"
+          - name: bub-tapestore-sqlalchemy
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlalchemy
+            logo: sqlalchemy.svg
+            description: SQLAlchemy-backed tape store plugin for Bub conversation history.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlalchemy
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-tapestore-sqlalchemy"
+          - name: bub-tapestore-sqlite
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlite
+            logo: sqlite.svg
+            description: SQLite-backed tape store plugin for Bub conversation history.
+            extra:
+              other_links:
+                - name: package
+                  url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlite
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/source_path": "packages/bub-tapestore-sqlite"
+
+  - name: Built-in Skills
+    subcategories:
+      - name: Core Operations
+        items:
+          - name: GitHub CLI
+            homepage_url: https://github.com/bubbuild/bub/tree/main/src/skills/gh
+            logo: github.svg
+            description: Built-in skill for repository, issue, pull request, release, and workflow operations through gh.
+            extra:
+              other_links:
+                - name: skill file
+                  url: https://github.com/bubbuild/bub/blob/main/src/skills/gh/SKILL.md
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "skill"
+          - name: Telegram
+            homepage_url: https://github.com/bubbuild/bub/tree/main/src/skills/telegram
+            logo: telegram.svg
+            description: Built-in skill for sending, replying, and editing Telegram bot messages.
+            extra:
+              other_links:
+                - name: skill file
+                  url: https://github.com/bubbuild/bub/blob/main/src/skills/telegram/SKILL.md
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "skill"
+          - name: Skill Creator
+            homepage_url: https://github.com/bubbuild/bub/tree/main/src/skills/skill-creator
+            logo: skill.svg
+            description: Built-in skill for creating and evolving reusable Bub skills.
+            extra:
+              other_links:
+                - name: skill file
+                  url: https://github.com/bubbuild/bub/blob/main/src/skills/skill-creator/SKILL.md
+              annotations:
+                "bubbuild.io/hosted": "true"
+                "bubbuild.io/kind": "skill"
+
+  - name: Selected Skills
+    subcategories:
+      - name: Python Craft
+        items:
+          - name: friendly-python
+            homepage_url: https://skills.sh/psiace/skills/friendly-python
+            logo: skill.svg
+            description: Friendly, Pythonic, maintainable code guidance from PsiACE's remote skill library.
+            repo_url: https://github.com/psiace/skills
+            extra:
+              documentation_url: https://skills.psiace.me/
+              other_links:
+                - name: skill page
+                  url: https://skills.sh/psiace/skills/friendly-python
+                - name: repository
+                  url: https://github.com/psiace/skills
+              annotations:
+                "bubbuild.io/hosted": "false"
+                "bubbuild.io/kind": "skill"
+          - name: piglet
+            homepage_url: https://skills.sh/psiace/skills/piglet
+            logo: skill.svg
+            description: Python craftsmanship patterns and pitfalls from PsiACE's remote skill library.
+            repo_url: https://github.com/psiace/skills
+            extra:
+              documentation_url: https://skills.psiace.me/
+              other_links:
+                - name: skill page
+                  url: https://skills.sh/psiace/skills/piglet
+                - name: repository
+                  url: https://github.com/psiace/skills
+              annotations:
+                "bubbuild.io/hosted": "false"
+                "bubbuild.io/kind": "skill"
+
+  - name: Friends
+    subcategories:
+      - name: Adjacent Projects
+        items:
+          - name: any-llm
+            homepage_url: https://any-llm.ai
+            logo: any-llm.png
+            description: Unified API and optional gateway for working with multiple LLM providers through one interface.
+            repo_url: https://github.com/mozilla-ai/any-llm
+            extra:
+              documentation_url: https://mozilla-ai.github.io/any-llm/
+              annotations:
+                "bubbuild.io/hosted": "false"
+                "bubbuild.io/kind": "friend"
+
+  - name: Distributions
+    subcategories:
+      - name: Downstream Platforms
+        items:
+          - name: bubseek
+            homepage_url: https://github.com/ob-labs/bubseek
+            logo: bubseek.svg
+            description: Enterprise-oriented Bub distribution for explainable insight workflows in cloud-edge environments.
+            repo_url: https://github.com/ob-labs/bubseek
+            license: Apache-2.0
+            extra:
+              documentation_url: https://github.com/ob-labs/bubseek
+              other_links:
+                - name: bubseek-schedule
+                  url: https://github.com/ob-labs/bubseek/tree/main/contrib/bubseek-schedule
+                - name: bubseek-marimo
+                  url: https://github.com/ob-labs/bubseek/tree/main/contrib/bubseek-marimo
+              annotations:
+                "bubbuild.io/hosted": "false"
+                "bubbuild.io/kind": "distribution"

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 100" role="img" aria-labelledby="title desc">
+  <title id="title">Friend</title>
+  <desc id="desc">Generic adjacent project logo for the Bub landscape.</desc>
+  <rect width="160" height="100" rx="20" fill="#143141" />
+  <circle cx="58" cy="50" r="24" fill="#5f9eb2" />
+  <circle cx="102" cy="50" r="24" fill="#ff7742" />
+  <circle cx="80" cy="50" r="16" fill="#eef5f7" />
+</svg>
