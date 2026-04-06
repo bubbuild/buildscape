@@ -29,7 +29,7 @@ categories:
 
   - category: "Plugins"
     content: |
-      Plugins extend Bub with channels, storage backends, tools, and model providers. This page is organized by function, not by ownership. Visual emphasis is reserved for the hosted or curated subsets.
+      Plugins are the Bub-hosted plugin packages maintained under the Bub umbrella. This section should include the full official plugin surface: packages from `bub-contrib` plus standalone Bub plugin repositories such as `bub-xiaoai` and `bub-folotoy`.
 
     subcategories:
       - subcategory: "Channels"
@@ -59,12 +59,15 @@ categories:
 
   - category: "Selected Skills"
     content: |
-      Selected skills are remote picks that complement the Bub ecosystem but are not bundled with Bub itself. They belong on the extensions page, not the official first page, and should use the same larger-card visual treatment as other curated items.
+      Selected skills are a lightweight curated list of remote skills that complement the Bub ecosystem but are not bundled with Bub itself. This landscape points at the upstream reading and installation surfaces; it does not mirror or maintain the skill content here.
 
     subcategories:
       - subcategory: "Python Craft"
         content: |
           `friendly-python` and `piglet` come from PsiACE's remote skill library, published through `skills.sh`, `skills.psiace.me`, and the `psiace/skills` GitHub repository.
+      - subcategory: "Board Viewers"
+        content: |
+          `chess-board` is a small remote skill and static viewer from `frostming/chess-board`, combining a FEN-like encoding spec with generated chess and xiangqi board pages.
 
   - category: "Friends"
     content: |

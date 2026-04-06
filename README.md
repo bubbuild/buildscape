@@ -47,10 +47,25 @@ landscape2 serve --landscape-dir build
 
 ## Data conventions
 
-- Plugins maintained in `bubbuild/bub-contrib` should be classified by function under `Plugins`, such as `Channels`, `Runtime & Workflow`, `Tools`, or `Storage`.
+- The landscape is a curated index, not a complete registry of every plugin package or skill payload.
+- `Plugins` should contain the full official Bub plugin surface: all plugin packages from `bubbuild/bub-contrib` plus standalone Bub-hosted plugin repositories such as `bub-xiaoai` and `bub-folotoy`.
 - Built-in Bub skills belong in `Built-in Skills / Core Operations` and should stay on the official first page.
 - External or curated skills should use remote sources only and belong in `Selected Skills / Python Craft`.
+- `Selected Skills` is list-only metadata: keep links to the upstream reading and installation surfaces, but do not mirror or maintain skill contents in this repo.
 - Downstream-only plugin packages should usually be linked from their parent distribution or project item instead of becoming first-class plugin entries.
+- Prefer a minimal metadata contract for selected entries:
+
+```yaml
+repo_url: https://github.com/example/project
+extra:
+  documentation_url: https://example.com/docs
+  other_links:
+    - name: source
+      url: https://github.com/example/project/tree/main/path
+  annotations:
+    "bubbuild.io/hosted": "true"
+    "bubbuild.io/kind": "plugin"
+```
 - For machine-readable ownership, set:
 
 ```yaml
@@ -59,7 +74,7 @@ extra:
     "bubbuild.io/hosted": "true"
 ```
 
-Use `"false"` for plugins hosted outside the Bub umbrella.
+Use `"false"` for plugins or skills hosted outside the Bub umbrella.
 
 For selected remote skills, prefer:
 

@@ -9,13 +9,13 @@ foundation: Bub
 url: http://127.0.0.1:8000
 
 colors:
-  color1: "rgba(22, 90, 118, 1)"
-  color2: "rgba(255, 119, 66, 1)"
-  color3: "rgba(95, 158, 178, 1)"
-  color4: "rgba(14, 49, 64, 0.82)"
-  color5: "rgba(27, 117, 150, 0.72)"
-  color6: "rgba(16, 71, 93, 0.72)"
-  color7: "rgba(226, 236, 241, 1)"
+  color1: "rgba(98, 196, 255, 1)"
+  color2: "rgba(26, 149, 224, 1)"
+  color3: "rgba(163, 171, 186, 1)"
+  color4: "rgba(34, 34, 37, 1)"
+  color5: "rgba(63, 63, 68, 0.92)"
+  color6: "rgba(34, 34, 37, 0.86)"
+  color7: "rgba(232, 233, 237, 1)"
 
 description: A landscape for Bub projects, websites, plugins, skills, adjacent projects, and downstream platforms.
 
@@ -40,15 +40,21 @@ featured_items:
         order: 8
       - value: Python Craft
         order: 9
+      - value: Adjacent Projects
+        order: 10
+      - value: Downstream Platforms
+        order: 11
+      - value: Board Viewers
+        order: 12
 
 footer:
   links:
-    github: "https://github.com/bubbuild/bub"
+    github: "https://github.com/bubbuild"
     homepage: "https://bub.build"
-    linkedin: "https://www.linkedin.com"
-  logo: "logos/brand.svg"
+    twitter: "https://x.com/bubdotbuild"
+  logo: "logos/bub-light.png"
   text: |
-    Bub ecosystem landscape prototype generated with landscape2.
+    Bub ecosystem landscape aligned with the official Bub brand surface.
 
 grid_items_size: small
 
@@ -73,9 +79,9 @@ groups:
 header:
   links:
     github: "https://github.com/bubbuild/bub"
-  logo: "logos/brand.svg"
+  logo: "logos/bub-light.png"
   motd: |
-    "Content first, emphasis second."
+    "A common shape for agents that live alongside people."
 
 hide_organization_section_in_projects: true
 
