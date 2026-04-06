@@ -93,3 +93,9 @@ For selected remote skills, prefer:
 ## Deployment note
 
 The default `settings.yml` uses `http://127.0.0.1:8000` so the site builds and serves locally without extra edits. Change `url` before deploying to a real domain.
+
+This repository also includes [`.github/workflows/deploy-pages.yml`](./.github/workflows/deploy-pages.yml), which builds and publishes the site to GitHub Pages on every push to `main`.
+
+For Pages deployment, the workflow treats the repository-root [`CNAME`](./CNAME) file as the single source of truth. It reads the domain from that file, rewrites `settings.yml` at build time with the corresponding `https://...` URL, and copies the same `CNAME` file into the published artifact.
+
+The current configured Pages domain is `hub.bub.build`.
