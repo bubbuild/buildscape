@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block header %}
+<header class="header">
+  <div class="header-inner">
+    <div class="logo"><span>$</span> Bub Hub</div>
+    <p class="tagline">{{ description }}</p>
+    <a href="https://bub.build" class="back-link">&larr; bub.build</a>
+  </div>
+</header>
+{% endblock %}
+
+{% block controls %}
+<div class="controls">
+  <div class="search-wrap">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+    </svg>
+    <input type="text" class="search" id="search" placeholder="Search packages…" autocomplete="off">
+  </div>
+  <div class="tabs" id="tabs">
+    <button class="tab active" data-cat="all">All</button>
+    {% for cat in categories %}
+    <button class="tab" data-cat="{{ cat.name }}">{{ cat.name }}</button>
+    {% endfor %}
+  </div>
+  <div class="results-info" id="results-info">
+    Showing <span id="shown-count">{{ total_items }}</span> of {{ total_items }} items
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<main class="content" id="content">
+  {% for cat in categories %}
+  <div class="category-section" data-category="{{ cat.name }}">
+    {% for subcat in cat.subcategories %}
+    {% if subcat.get("items") %}
+    <div class="subcategory-group">
+      <h3 class="subcategory-title">{{ subcat.name }}</h3>
+      <div class="cards-grid">
+        {% for item in subcat.get("items", []) %}
+        {% include "partials/card.html" %}
+        {% endfor %}
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  {% endfor %}
+  <div class="empty-state" id="empty-state">
+    <div class="empty-icon">&empty;</div>
+    <p>No items match your search.</p>
+  </div>
+</main>
+{% endblock %}
+
+{% block footer %}
+<footer class="footer">
+  <div class="footer-links">
+    <a href="https://bub.build">bub.build</a>
+    <a href="https://github.com/bubbuild" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://bub.build/extension-guide/" target="_blank" rel="noopener">Extension Guide</a>
+  </div>
+  <p>Built with bub · hub.bub.build</p>
+</footer>
+{% endblock %}
+
+{% block scripts %}
+<script>
+{% include "hub.js" %}
+</script>
+{% endblock %}

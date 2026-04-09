@@ -1,0 +1,12 @@
+[project]
+name = "hub"
+version = "0.1.0"
+description = "Ecosystem directory for Bub plugins, skills, distributions, and friends."
+requires-python = ">=3.12"
+dependencies = [
+    "jinja2>=3.1.6",
+    "pyyaml>=6.0.3",
+]
+
+[dependency-groups]
+dev = []

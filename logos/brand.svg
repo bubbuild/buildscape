@@ -1,16 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" role="img" aria-labelledby="title desc">
-  <title id="title">Bub Landscape</title>
-  <desc id="desc">Text logo for the Bub landscape.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 120" role="img" aria-labelledby="title desc">
+  <title id="title">Bub Hub</title>
+  <desc id="desc">Text logo for the Bub Hub.</desc>
   <defs>
     <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#165a76" />
       <stop offset="100%" stop-color="#ff7742" />
     </linearGradient>
   </defs>
-  <rect width="420" height="120" rx="24" fill="#0f2530" />
+  <rect width="300" height="120" rx="24" fill="#0f2530" />
   <circle cx="58" cy="60" r="28" fill="#ff7742" />
   <circle cx="88" cy="60" r="20" fill="#165a76" />
   <text x="128" y="68" font-family="Verdana, Geneva, sans-serif" font-size="34" font-weight="700" fill="url(#brand-gradient)">
-    Bub Landscape
+    Bub Hub
   </text>
 </svg>
