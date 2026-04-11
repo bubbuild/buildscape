@@ -67,6 +67,15 @@ categories:
             install: 'uv add "bub-wechat @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-wechat"'
             source_path: packages/bub-wechat
 
+          - name: bub-wecom
+            description: WeCom channel adapter for Bub message IO.
+            kind: plugin
+            logo: wecom.png
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wecom
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: 'uv add "bub-wechat @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-wecom"'
+            source_path: packages/bub-wecom
+
           - name: bub-tg-feed
             description: AMQP-based Telegram feed channel adapter for Bub.
             kind: plugin
