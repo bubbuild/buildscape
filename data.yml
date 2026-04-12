@@ -150,7 +150,7 @@ categories:
             install: 'uv add "bub-web-search @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-web-search"'
             source_path: packages/bub-web-search
 
-      - name: Storage
+      - name: Storage & Memory
         items:
           - name: bub-tapestore-redis
             description: Redis-backed tape store plugin for Bub conversation history.
@@ -178,6 +178,16 @@ categories:
             repo_url: https://github.com/bubbuild/bub-contrib
             install: 'uv add "bub-tapestore-sqlite @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-tapestore-sqlite"'
             source_path: packages/bub-tapestore-sqlite
+
+          - name: nowledge-mem-bub-plugin
+            description: Bring your cross-tool knowledge into Bub, and share what you learn in Bub with every other tool.
+            kind: plugin
+            logo: nowledge-mem.png
+            homepage_url: https://mem.nowledge.co/
+            docs_url: https://mem.nowledge.co/docs/integrations/bub
+            repo_url: https://github.com/nowledge-co/community/tree/main/nowledge-mem-bub-plugin
+            install: 'uv add "nowledge-mem-bub-plugin @ git+https://github.com/nowledge-co/community#subdirectory=nowledge-mem-bub-plugin"'
+            source_path: nowledge-mem-bub-plugin
 
   - name: Skills
     subcategories:
