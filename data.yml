@@ -28,7 +28,7 @@ categories:
             logo: discord.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-discord
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-discord'
+            install: 'bub install bub-discord@main'
             source_path: packages/bub-discord
 
           - name: bub-dingtalk
@@ -37,7 +37,7 @@ categories:
             logo: dingtalk-site.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-dingtalk
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-dingtalk'
+            install: 'bub install bub-dingtalk@main'
             source_path: packages/bub-dingtalk
 
           - name: bub-feishu
@@ -46,7 +46,7 @@ categories:
             logo: lark-suite.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-feishu
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-feishu'
+            install: 'bub install bub-feishu@main'
             source_path: packages/bub-feishu
 
           - name: bub-qq
@@ -55,7 +55,7 @@ categories:
             logo: qq.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-qq
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-qq'
+            install: 'bub install bub-qq@main'
             source_path: packages/bub-qq
 
           - name: bub-wechat
@@ -64,7 +64,7 @@ categories:
             logo: wechat.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wechat
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-wechat'
+            install: 'bub install bub-wechat@main'
             source_path: packages/bub-wechat
 
           - name: bub-wecom
@@ -73,7 +73,7 @@ categories:
             logo: wecom.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wecom
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-wecom'
+            install: 'bub install bub-wecom@main'
             source_path: packages/bub-wecom
 
           - name: bub-xiaoai
@@ -100,7 +100,7 @@ categories:
             logo: openai.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-codex
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bubbuild/bub-codex'
+            install: 'bub install bub-codex@main'
             source_path: packages/bub-codex
 
           - name: bub-github-copilot
@@ -109,7 +109,7 @@ categories:
             logo: github-copilot.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-github-copilot
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bubbuild/bub-github-copliot'
+            install: 'bub install bub-github-copliot@main'
             source_path: packages/bub-github-copilot
 
           - name: bub-session-prompt
@@ -118,7 +118,7 @@ categories:
             logo: bub-light.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-session-prompt
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-session-prompt'
+            install: 'bub install bub-session-prompt@main'
             source_path: packages/bub-session-prompt
 
       - name: Tools
@@ -129,7 +129,7 @@ categories:
             logo: calendar.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-schedule
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-schedule'
+            install: 'bub install bub-schedule@main'
             source_path: packages/bub-schedule
 
           - name: bub-web-search
@@ -138,7 +138,7 @@ categories:
             logo: search.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-web-search
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-web-search'
+            install: 'bub install bub-web-search@main'
             source_path: packages/bub-web-search
 
       - name: Storage & Memory
@@ -149,7 +149,7 @@ categories:
             logo: redis.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-redis
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-tapestore-redis'
+            install: 'bub install bub-tapestore-redis@main'
             source_path: packages/bub-tapestore-redis
 
           - name: bub-tapestore-sqlalchemy
@@ -158,7 +158,7 @@ categories:
             logo: sqlalchemy.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlalchemy
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-tapestore-sqlalchemy'
+            install: 'bub install bub-tapestore-sqlalchemy@main'
             source_path: packages/bub-tapestore-sqlalchemy
 
           - name: bub-tapestore-sqlite
@@ -167,7 +167,7 @@ categories:
             logo: sqlite.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlite
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-tapestore-sqlite'
+            install: 'bub install bub-tapestore-sqlite@main'
             source_path: packages/bub-tapestore-sqlite
 
           - name: nowledge-mem-bub-plugin
