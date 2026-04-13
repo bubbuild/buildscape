@@ -28,7 +28,7 @@ categories:
             logo: discord.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-discord
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-discord @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-discord"'
+            install: 'bub install bub-discord'
             source_path: packages/bub-discord
 
           - name: bub-dingtalk
@@ -37,7 +37,7 @@ categories:
             logo: dingtalk-site.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-dingtalk
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-dingtalk @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-dingtalk"'
+            install: 'bub install bub-dingtalk'
             source_path: packages/bub-dingtalk
 
           - name: bub-feishu
@@ -46,7 +46,7 @@ categories:
             logo: lark-suite.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-feishu
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-feishu @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-feishu"'
+            install: 'bub install bub-feishu'
             source_path: packages/bub-feishu
 
           - name: bub-qq
@@ -55,7 +55,7 @@ categories:
             logo: qq.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-qq
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-qq @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-qq"'
+            install: 'bub install bub-qq'
             source_path: packages/bub-qq
 
           - name: bub-wechat
@@ -64,7 +64,7 @@ categories:
             logo: wechat.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wechat
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-wechat @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-wechat"'
+            install: 'bub install bub-wechat'
             source_path: packages/bub-wechat
 
           - name: bub-wecom
@@ -73,17 +73,8 @@ categories:
             logo: wecom.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wecom
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-wechat @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-wecom"'
+            install: 'bub install bub-wecom'
             source_path: packages/bub-wecom
-
-          - name: bub-tg-feed
-            description: AMQP-based Telegram feed channel adapter for Bub.
-            kind: plugin
-            logo: telegram.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tg-feed
-            repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-tg-feed @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-tg-feed"'
-            source_path: packages/bub-tg-feed
 
           - name: bub-xiaoai
             description: Xiaomi XiaoAi speaker channel plugin with message polling and device TTS replies.
@@ -91,7 +82,7 @@ categories:
             logo: xiaoai.png
             homepage_url: https://github.com/bubbuild/bub-xiaoai
             repo_url: https://github.com/bubbuild/bub-xiaoai
-            install: 'uv add "bub-xiaoai @ git+https://github.com/bubbuild/bub-xiaoai"'
+            install: 'bub install bubbuild/bub-xiaoai'
 
           - name: bub-folotoy
             description: FoloToy channel plugin with MQTT message listening, spoken replies, and proactive notifications.
@@ -99,7 +90,7 @@ categories:
             logo: folotoy.svg
             homepage_url: https://github.com/bubbuild/bub-folotoy
             repo_url: https://github.com/bubbuild/bub-folotoy
-            install: 'uv add "bub-folotoy @ git+https://github.com/bubbuild/bub-folotoy"'
+            install: 'bub install bubbuild/bub-folotoy'
 
       - name: Runtime & Workflow
         items:
@@ -109,7 +100,7 @@ categories:
             logo: openai.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-codex
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-codex @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-codex"'
+            install: 'bub install bubbuild/bub-codex'
             source_path: packages/bub-codex
 
           - name: bub-github-copilot
@@ -118,7 +109,7 @@ categories:
             logo: github-copilot.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-github-copilot
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-github-copilot @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-github-copilot"'
+            install: 'bub install bubbuild/bub-github-copliot'
             source_path: packages/bub-github-copilot
 
           - name: bub-session-prompt
@@ -127,7 +118,7 @@ categories:
             logo: bub-light.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-session-prompt
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-session-prompt @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-session-prompt"'
+            install: 'bub install bub-session-prompt'
             source_path: packages/bub-session-prompt
 
       - name: Tools
@@ -138,7 +129,7 @@ categories:
             logo: calendar.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-schedule
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-schedule @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-schedule"'
+            install: 'bub install bub-schedule'
             source_path: packages/bub-schedule
 
           - name: bub-web-search
@@ -147,7 +138,7 @@ categories:
             logo: search.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-web-search
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-web-search @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-web-search"'
+            install: 'bub install bub-web-search'
             source_path: packages/bub-web-search
 
       - name: Storage & Memory
@@ -158,7 +149,7 @@ categories:
             logo: redis.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-redis
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-tapestore-redis @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-tapestore-redis"'
+            install: 'bub install bub-tapestore-redis'
             source_path: packages/bub-tapestore-redis
 
           - name: bub-tapestore-sqlalchemy
@@ -167,7 +158,7 @@ categories:
             logo: sqlalchemy.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlalchemy
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-tapestore-sqlalchemy @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-tapestore-sqlalchemy"'
+            install: 'bub install bub-tapestore-sqlalchemy'
             source_path: packages/bub-tapestore-sqlalchemy
 
           - name: bub-tapestore-sqlite
@@ -176,7 +167,7 @@ categories:
             logo: sqlite.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlite
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'uv add "bub-tapestore-sqlite @ git+https://github.com/bubbuild/bub-contrib#subdirectory=packages/bub-tapestore-sqlite"'
+            install: 'bub install bub-tapestore-sqlite'
             source_path: packages/bub-tapestore-sqlite
 
           - name: nowledge-mem-bub-plugin
@@ -186,7 +177,7 @@ categories:
             homepage_url: https://mem.nowledge.co/
             docs_url: https://mem.nowledge.co/docs/integrations/bub
             repo_url: https://github.com/nowledge-co/community/tree/main/nowledge-mem-bub-plugin
-            install: 'uv add "nowledge-mem-bub-plugin @ git+https://github.com/nowledge-co/community#subdirectory=nowledge-mem-bub-plugin"'
+            install: 'bub install nowledge-mem-bub-plugin'
             source_path: nowledge-mem-bub-plugin
 
   - name: Skills
