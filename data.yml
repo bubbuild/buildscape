@@ -176,7 +176,7 @@ categories:
             logo: nowledge-mem.png
             homepage_url: https://mem.nowledge.co/
             docs_url: https://mem.nowledge.co/docs/integrations/bub
-            repo_url: https://github.com/nowledge-co/community/tree/main/nowledge-mem-bub-plugin
+            repo_url: https://github.com/nowledge-co/community
             install: 'bub install nowledge-mem-bub-plugin'
             source_path: nowledge-mem-bub-plugin
 
