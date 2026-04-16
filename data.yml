@@ -170,14 +170,14 @@ categories:
             install: 'bub install bub-tapestore-sqlite@main'
             source_path: packages/bub-tapestore-sqlite
 
-          - name: nowledge-mem-bub-plugin
+          - name: nowledge-mem-bub
             description: Bring your cross-tool knowledge into Bub, and share what you learn in Bub with every other tool.
             kind: plugin
             logo: nowledge-mem.png
             homepage_url: https://mem.nowledge.co/
             docs_url: https://mem.nowledge.co/docs/integrations/bub
             repo_url: https://github.com/nowledge-co/community
-            install: 'bub install nowledge-mem-bub-plugin'
+            install: 'bub install nowledge-mem-bub'
             source_path: nowledge-mem-bub-plugin
 
   - name: Skills
