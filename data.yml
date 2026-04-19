@@ -228,6 +228,16 @@ categories:
 
       - name: Selected
         items:
+          - name: plugin-creator
+            description: Create or update a Bub plugin in any local path, including packaging, entry points, and workspace wiring.
+            kind: skill
+            logo: bub-light.png
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/.agents/skills/plugin-creator
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: "npx skills add bubbuild/bub-contrib --skill plugin-creator"
+            author: bubbuild
+            skill_file: https://github.com/bubbuild/bub-contrib/blob/main/.agents/skills/plugin-creator/SKILL.md
+
           - name: friendly-python
             description: Friendly, Pythonic, maintainable code guidance from PsiACE's remote skill library.
             kind: skill
