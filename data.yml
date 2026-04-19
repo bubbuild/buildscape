@@ -112,6 +112,15 @@ categories:
             install: 'bub install bub-github-copliot@main'
             source_path: packages/bub-github-copilot
 
+          - name: bub-kimi
+            description: Kimi CLI-backed run_model plugin with session resume support.
+            kind: plugin
+            logo: kimi.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-kimi
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: 'bub install bub-kimi@main'
+            source_path: packages/bub-kimi
+
           - name: bub-session-prompt
             description: Session-specific system prompt plugin sourced from local Bub session state.
             kind: plugin
@@ -140,6 +149,15 @@ categories:
             repo_url: https://github.com/bubbuild/bub-contrib
             install: 'bub install bub-web-search@main'
             source_path: packages/bub-web-search
+
+          - name: bub-searxng-search
+            description: SearXNG-backed web search tool package for Bub.
+            kind: plugin
+            logo: searxng.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-searxng-search
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: 'bub install bub-searxng-search@main'
+            source_path: packages/bub-searxng-search
 
       - name: Storage & Memory
         items:
