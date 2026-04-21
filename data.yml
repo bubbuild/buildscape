@@ -132,6 +132,15 @@ categories:
 
       - name: Tools
         items:
+          - name: bub-mcp
+            description: Exposes configured MCP servers as Bub tools, with `bub mcp` commands to list, add, and remove server configs.
+            kind: plugin
+            logo: mcp.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-mcp
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: 'bub install bub-mcp@main'
+            source_path: packages/bub-mcp
+
           - name: bub-schedule
             description: Scheduling channel and tools backed by APScheduler.
             kind: plugin
