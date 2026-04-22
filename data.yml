@@ -173,7 +173,7 @@ categories:
           - name: tape-dataset-opendal
             description: Exports Bub and Republic tapes to backend-agnostic dataset artifacts through OpenDAL.
             kind: plugin
-            logo: bub.svg
+            logo: bub-light.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/tape-dataset-opendal
             repo_url: https://github.com/bubbuild/bub-contrib
             install: 'bub install tape-dataset-opendal@main'
