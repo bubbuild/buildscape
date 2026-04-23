@@ -1,0 +1,131 @@
+media:
+  input: logos
+  output: ""
+
+content:
+  - name: hub
+    label: Bub Hub (data.yml)
+    type: file
+    path: data.yml
+    format: yaml
+    fields:
+      - name: categories
+        label: Categories
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Category name
+            type: string
+            required: true
+            options:
+              creatable: true
+              values:
+                - Plugins
+                - Skills
+                - Distributions
+                - Friends
+
+          - name: subcategories
+            label: Subcategories
+            type: object
+            list: true
+            fields:
+              - name: name
+                label: Subcategory name
+                type: string
+                required: true
+
+              - name: items
+                label: Items
+                type: object
+                list: true
+                fields:
+                  - name: name
+                    label: Display name
+                    type: string
+                    required: true
+
+                  - name: description
+                    label: One-line description
+                    type: string
+                    required: true
+
+                  - name: kind
+                    label: Kind
+                    type: select
+                    required: true
+                    options:
+                      values:
+                        - plugin
+                        - skill
+                        - distribution
+                        - friend
+
+                  - name: logo
+                    label: Logo (stored as filename in logos/)
+                    type: image
+
+                  - name: homepage_url
+                    label: Homepage URL
+                    type: string
+                    options:
+                      type: url
+
+                  - name: repo_url
+                    label: Repository URL
+                    type: string
+                    options:
+                      type: url
+
+                  - name: docs_url
+                    label: Docs URL
+                    type: string
+                    options:
+                      type: url
+
+                  - name: author
+                    label: Author / organization
+                    type: string
+
+                  - name: license
+                    label: SPDX license
+                    type: string
+
+                  - name: install
+                    label: Install command
+                    type: string
+
+                  - name: builtin
+                    label: Shipped with Bub core
+                    type: boolean
+
+                  - name: source_path
+                    label: Path within monorepo
+                    type: string
+
+                  - name: skill_file
+                    label: SKILL.md URL
+                    type: string
+                    options:
+                      type: url
+
+                  - name: bundled_plugins
+                    label: Bundled plugins (distributions only, max 3 shown)
+                    type: object
+                    list: true
+                    fields:
+                      - name: name
+                        label: Plugin name
+                        type: string
+                        required: true
+                      - name: url
+                        label: Plugin URL
+                        type: string
+                        required: true
+                        options:
+                          type: url
+
+settings:
+  merge:
+    commit_message: "cms: update {filename}"
