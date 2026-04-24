@@ -300,6 +300,15 @@ categories:
                 url: https://github.com/ob-labs/bubseek/tree/main/contrib/bubseek-schedule
               - name: bubseek-marimo
                 url: https://github.com/ob-labs/bubseek/tree/main/contrib/bubseek-marimo
+       items:
+          - name: visual-base
+            description: The second brain from your eyes. visual-base records what your eyes land on.
+            kind: distribution
+            logo: visual-base.png
+            homepage_url: https://github.com/oilbeater/visual-base
+            repo_url: https://github.com/oilbeater/visual-base
+            install: "uv tool install visual-base"
+            license: MIT
 
   - name: Friends
     subcategories:
