@@ -1,22 +1,3 @@
-# Bub Hub — hub.bub.build
-# Ecosystem directory for Bub plugins, skills, distributions, and friends.
-#
-# Item schema (all items share the same flat structure):
-#   name:            str   (required) Display name
-#   description:     str   (required) One-line summary
-#   kind:            enum  (required) plugin | skill | distribution | friend
-#   logo:            str   Filename in logos/
-#   homepage_url:    str   Primary link
-#   repo_url:        str   Source repository
-#   docs_url:        str   Documentation URL
-#   author:          str   Author or organization
-#   license:         str   SPDX identifier
-#   install:         str   Install command
-#   builtin:         bool  Shipped with Bub core
-#   source_path:     str   Path within a monorepo (repo link renders as repo_url/tree/main/{source_path})
-#   skill_file:      str   URL to SKILL.md
-#   bundled_plugins: list  [{name, url}] for distributions
-
 categories:
   - name: Plugins
     subcategories:
@@ -25,298 +6,311 @@ categories:
           - name: bub-discord
             description: Discord channel adapter for Bub message IO.
             kind: plugin
-            logo: discord.svg
+            logo: /discord.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-discord
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-discord@main'
+            install: bub install bub-discord@main
+            builtin: false
             source_path: packages/bub-discord
-
           - name: bub-dingtalk
             description: DingTalk Stream Mode channel adapter for Bub message IO.
             kind: plugin
-            logo: dingtalk-site.png
+            logo: /dingtalk-site.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-dingtalk
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-dingtalk@main'
+            install: bub install bub-dingtalk@main
+            builtin: false
             source_path: packages/bub-dingtalk
-
           - name: bub-feishu
             description: Feishu channel adapter for Bub message IO.
             kind: plugin
-            logo: lark-suite.png
+            logo: /lark-suite.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-feishu
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-feishu@main'
+            install: bub install bub-feishu@main
+            builtin: false
             source_path: packages/bub-feishu
-
           - name: bub-qq
             description: QQ Open Platform channel adapter for Bub.
             kind: plugin
-            logo: qq.svg
+            logo: /qq.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-qq
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-qq@main'
+            install: bub install bub-qq@main
+            builtin: false
             source_path: packages/bub-qq
-
           - name: bub-wechat
             description: WeChat channel adapter for Bub message IO.
             kind: plugin
-            logo: wechat.svg
+            logo: /wechat.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wechat
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-wechat@main'
+            install: bub install bub-wechat@main
+            builtin: false
             source_path: packages/bub-wechat
-
           - name: bub-wecom
             description: WeCom channel adapter for Bub message IO.
             kind: plugin
-            logo: wecom.png
+            logo: /wecom.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wecom
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-wecom@main'
+            install: bub install bub-wecom@main
+            builtin: false
             source_path: packages/bub-wecom
-
           - name: bub-xiaoai
-            description: Xiaomi XiaoAi speaker channel plugin with message polling and device TTS replies.
+            description: Xiaomi XiaoAi speaker channel plugin with message polling and
+              device TTS replies.
             kind: plugin
-            logo: xiaoai.png
+            logo: /xiaoai.png
             homepage_url: https://github.com/bubbuild/bub-xiaoai
             repo_url: https://github.com/bubbuild/bub-xiaoai
-            install: 'bub install bubbuild/bub-xiaoai'
-
+            install: bub install bubbuild/bub-xiaoai
+            builtin: false
           - name: bub-folotoy
-            description: FoloToy channel plugin with MQTT message listening, spoken replies, and proactive notifications.
+            description: FoloToy channel plugin with MQTT message listening, spoken replies,
+              and proactive notifications.
             kind: plugin
-            logo: folotoy.svg
+            logo: /folotoy.svg
             homepage_url: https://github.com/bubbuild/bub-folotoy
             repo_url: https://github.com/bubbuild/bub-folotoy
-            install: 'bub install bubbuild/bub-folotoy'
-
+            install: bub install bubbuild/bub-folotoy
+            builtin: false
       - name: Runtime & Workflow
         items:
           - name: bub-codex
             description: Delegates Bub model execution to the Codex CLI.
             kind: plugin
-            logo: openai.svg
+            logo: /openai.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-codex
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-codex@main'
+            install: bub install bub-codex@main
+            builtin: false
             source_path: packages/bub-codex
-
           - name: bub-github-copilot
-            description: GitHub Copilot SDK-backed run_model plugin plus GitHub device-flow login support.
+            description: GitHub Copilot SDK-backed run_model plugin plus GitHub device-flow
+              login support.
             kind: plugin
-            logo: github-copilot.svg
+            logo: /github-copilot.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-github-copilot
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-github-copliot@main'
+            install: bub install bub-github-copliot@main
+            builtin: false
             source_path: packages/bub-github-copilot
-
           - name: bub-kimi
             description: Kimi CLI-backed run_model plugin with session resume support.
             kind: plugin
-            logo: kimi.svg
+            logo: /kimi.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-kimi
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-kimi@main'
+            install: bub install bub-kimi@main
+            builtin: false
             source_path: packages/bub-kimi
-
           - name: bub-session-prompt
-            description: Session-specific system prompt plugin sourced from local Bub session state.
+            description: Session-specific system prompt plugin sourced from local Bub
+              session state.
             kind: plugin
-            logo: bub-light.png
+            logo: /bub-light.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-session-prompt
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-session-prompt@main'
+            install: bub install bub-session-prompt@main
+            builtin: false
             source_path: packages/bub-session-prompt
-
       - name: Tools
         items:
           - name: bub-mcp
-            description: Exposes configured MCP servers as Bub tools, with `bub mcp` commands to list, add, and remove server configs.
+            description: Exposes configured MCP servers as Bub tools, with `bub mcp`
+              commands to list, add, and remove server configs.
             kind: plugin
-            logo: mcp.svg
+            logo: /mcp.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-mcp
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-mcp@main'
+            install: bub install bub-mcp@main
+            builtin: false
             source_path: packages/bub-mcp
-
           - name: bub-schedule
             description: Scheduling channel and tools backed by APScheduler.
             kind: plugin
-            logo: calendar.svg
+            logo: /calendar.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-schedule
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-schedule@main'
+            install: bub install bub-schedule@main
+            builtin: false
             source_path: packages/bub-schedule
-
           - name: bub-web-search
             description: Web search tool package for Bub.
             kind: plugin
-            logo: search.svg
+            logo: /search.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-web-search
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-web-search@main'
+            install: bub install bub-web-search@main
+            builtin: false
             source_path: packages/bub-web-search
-
           - name: bub-searxng-search
             description: SearXNG-backed web search tool package for Bub.
             kind: plugin
-            logo: searxng.svg
+            logo: /searxng.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-searxng-search
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-searxng-search@main'
+            install: bub install bub-searxng-search@main
+            builtin: false
             source_path: packages/bub-searxng-search
-
       - name: Storage & Memory
         items:
           - name: tape-dataset-opendal
-            description: Exports Bub and Republic tapes to backend-agnostic dataset artifacts through OpenDAL.
+            description: Exports Bub and Republic tapes to backend-agnostic dataset
+              artifacts through OpenDAL.
             kind: plugin
-            logo: bub-light.png
+            logo: /bub-light.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/tape-dataset-opendal
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install tape-dataset-opendal@main'
+            install: bub install tape-dataset-opendal@main
+            builtin: false
             source_path: packages/tape-dataset-opendal
-
           - name: bub-tapestore-redis
             description: Redis-backed tape store plugin for Bub conversation history.
             kind: plugin
-            logo: redis.svg
+            logo: /redis.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-redis
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-tapestore-redis@main'
+            install: bub install bub-tapestore-redis@main
+            builtin: false
             source_path: packages/bub-tapestore-redis
-
           - name: bub-tapestore-sqlalchemy
             description: SQLAlchemy-backed tape store plugin for Bub conversation history.
             kind: plugin
-            logo: sqlalchemy.svg
+            logo: /sqlalchemy.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlalchemy
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-tapestore-sqlalchemy@main'
+            install: bub install bub-tapestore-sqlalchemy@main
+            builtin: false
             source_path: packages/bub-tapestore-sqlalchemy
-
           - name: bub-tapestore-sqlite
             description: SQLite-backed tape store plugin for Bub conversation history.
             kind: plugin
-            logo: sqlite.svg
+            logo: /sqlite.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlite
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: 'bub install bub-tapestore-sqlite@main'
+            install: bub install bub-tapestore-sqlite@main
+            builtin: false
             source_path: packages/bub-tapestore-sqlite
-
           - name: nowledge-mem-bub
-            description: Bring your cross-tool knowledge into Bub, and share what you learn in Bub with every other tool.
+            description: Bring your cross-tool knowledge into Bub, and share what you learn
+              in Bub with every other tool.
             kind: plugin
-            logo: nowledge-mem.png
+            logo: /nowledge-mem.png
             homepage_url: https://mem.nowledge.co/
-            docs_url: https://mem.nowledge.co/docs/integrations/bub
             repo_url: https://github.com/nowledge-co/community
-            install: 'bub install nowledge-mem-bub'
+            docs_url: https://mem.nowledge.co/docs/integrations/bub
+            install: bub install nowledge-mem-bub
+            builtin: false
             source_path: nowledge-mem-bub-plugin
-
   - name: Skills
     subcategories:
       - name: Built-in
         items:
           - name: GitHub CLI
-            description: Built-in skill for repository, issue, pull request, release, and workflow operations through gh.
+            description: Built-in skill for repository, issue, pull request, release, and
+              workflow operations through gh.
             kind: skill
-            logo: github.svg
+            logo: /github.svg
             homepage_url: https://github.com/bubbuild/bub/tree/main/src/skills/gh
             builtin: true
             skill_file: https://github.com/bubbuild/bub/blob/main/src/skills/gh/SKILL.md
-
           - name: Telegram
-            description: Built-in skill for sending, replying, and editing Telegram bot messages.
+            description: Built-in skill for sending, replying, and editing Telegram bot
+              messages.
             kind: skill
-            logo: telegram.svg
+            logo: /telegram.svg
             homepage_url: https://github.com/bubbuild/bub/tree/main/src/skills/telegram
             builtin: true
             skill_file: https://github.com/bubbuild/bub/blob/main/src/skills/telegram/SKILL.md
-
           - name: Skill Creator
             description: Built-in skill for creating and evolving reusable Bub skills.
             kind: skill
-            logo: bub-light.png
+            logo: /bub-light.png
             homepage_url: https://github.com/bubbuild/bub/tree/main/src/skills/skill-creator
             builtin: true
             skill_file: https://github.com/bubbuild/bub/blob/main/src/skills/skill-creator/SKILL.md
-
       - name: Selected
         items:
           - name: plugin-creator
-            description: Create or update a Bub plugin in any local path, including packaging, entry points, and workspace wiring.
+            description: Create or update a Bub plugin in any local path, including
+              packaging, entry points, and workspace wiring.
             kind: skill
-            logo: bub-light.png
+            logo: /bub-light.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/.agents/skills/plugin-creator
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: "npx skills add bubbuild/bub-contrib --skill plugin-creator"
             author: bubbuild
+            install: npx skills add bubbuild/bub-contrib --skill plugin-creator
+            builtin: false
             skill_file: https://github.com/bubbuild/bub-contrib/blob/main/.agents/skills/plugin-creator/SKILL.md
-
           - name: friendly-python
-            description: Friendly, Pythonic, maintainable code guidance from PsiACE's remote skill library.
+            description: Friendly, Pythonic, maintainable code guidance from PsiACE's remote
+              skill library.
             kind: skill
-            logo: frostming.png
+            logo: /frostming.png
             homepage_url: https://skills.sh/psiace/skills/friendly-python
             repo_url: https://github.com/psiace/skills
-            install: "npx skills add psiace/skills --skill friendly-python"
             author: psiace
-
+            install: npx skills add psiace/skills --skill friendly-python
+            builtin: false
           - name: piglet
-            description: Python craftsmanship patterns and pitfalls from PsiACE's remote skill library.
+            description: Python craftsmanship patterns and pitfalls from PsiACE's remote
+              skill library.
             kind: skill
-            logo: piglei.jpg
+            logo: /piglei.jpg
             homepage_url: https://skills.sh/psiace/skills/piglet
             repo_url: https://github.com/psiace/skills
-            install: "npx skills add psiace/skills --skill piglet"
             author: psiace
-
+            install: npx skills add psiace/skills --skill piglet
+            builtin: false
           - name: chess-board
-            description: FEN-driven chess and xiangqi board viewer with a reusable skill spec for encoding board positions.
+            description: FEN-driven chess and xiangqi board viewer with a reusable skill
+              spec for encoding board positions.
             kind: skill
-            logo: chess-board.svg
+            logo: /chess-board.svg
             homepage_url: https://frostming.github.io/chess-board/xiangqi.html
             repo_url: https://github.com/frostming/chess-board
-            install: "npx skills add frostming/chess-board"
             author: frostming
+            install: npx skills add frostming/chess-board
+            builtin: false
             skill_file: https://github.com/frostming/chess-board/blob/main/SKILL.md
-
   - name: Distributions
     subcategories:
       - name: Downstream Platforms
         items:
-          - name: bubseek
-            description: Enterprise-oriented Bub distribution for explainable insight workflows in cloud-edge environments.
+          - name: agentseek
+            description: A database-native Agent Harness, built by OceanBase OSS Team.
             kind: distribution
-            logo: oceanbase.png
-            homepage_url: https://github.com/ob-labs/bubseek
-            repo_url: https://github.com/ob-labs/bubseek
+            logo: /oceanbase.png
+            homepage_url: https://github.com/ob-labs/agentseek
+            repo_url: https://github.com/ob-labs/agentseek
+            docs_url: ob-labs.github.io/agentseek/
             license: Apache-2.0
+            builtin: false
             bundled_plugins:
-              - name: bubseek-schedule
-                url: https://github.com/ob-labs/bubseek/tree/main/contrib/bubseek-schedule
-              - name: bubseek-marimo
-                url: https://github.com/ob-labs/bubseek/tree/main/contrib/bubseek-marimo
+              - name: agentseek-schedule-sqlalchemy
+                url: https://github.com/ob-labs/agentseek/tree/main/contrib/agentseek-schedule-sqlalchemy
           - name: visual-base
-            description: The second brain from your eyes. visual-base records what your eyes land on.
+            description: The second brain from your eyes. visual-base records what your eyes
+              land on.
             kind: distribution
-            logo: visual-base.png
+            logo: /visual-base.png
             homepage_url: https://github.com/oilbeater/visual-base
             repo_url: https://github.com/oilbeater/visual-base
-            install: "uv tool install visual-base"
             license: MIT
-
+            install: uv tool install visual-base
+            builtin: false
   - name: Friends
     subcategories:
       - name: Adjacent Projects
         items:
           - name: any-llm
-            description: Unified API and optional gateway for working with multiple LLM providers through one interface.
+            description: Unified API and optional gateway for working with multiple LLM
+              providers through one interface.
             kind: friend
-            logo: any-llm.png
+            logo: /any-llm.png
             homepage_url: https://any-llm.ai
             repo_url: https://github.com/mozilla-ai/any-llm
             docs_url: https://mozilla-ai.github.io/any-llm/
+            builtin: false
