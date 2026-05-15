@@ -75,6 +75,15 @@ categories:
             repo_url: https://github.com/bubbuild/bub-folotoy
             install: bub install bubbuild/bub-folotoy
             builtin: false
+          - name: bub-mcp-server
+            description: Expose Bub as an MCP server
+            kind: plugin
+            logo: /mcp.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-mcp-server
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: bub install bub-mcp-server@main
+            builtin: false
+            source_path: packages/bub-mcp-server
       - name: Runtime & Workflow
         items:
           - name: bub-codex
