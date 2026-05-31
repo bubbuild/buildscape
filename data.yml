@@ -93,6 +93,16 @@ categories:
             install: bub install bub-mcp-server@main
             builtin: false
             source_path: packages/bub-mcp-server
+          - name: bub-acp-server
+            description: Expose Bub as an Agent Client Protocol agent for ACP-compatible
+              editors.
+            kind: plugin
+            logo: /acp.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-acp-server
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: bub install bub-acp-server@main
+            builtin: false
+            source_path: packages/bub-acp-server
       - name: Runtime & Workflow
         items:
           - name: bub-codex
