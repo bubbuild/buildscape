@@ -96,9 +96,14 @@ button,input{font:inherit}
   border-radius:var(--radius-sm);
   background:var(--foreground);
   color:var(--primary-foreground);
-  font-weight:800;
-  line-height:1;
   box-shadow:var(--shadow-card);
+  overflow:hidden;
+}
+.brand-mark img{
+  display:block;
+  width:1.55rem;
+  height:1.55rem;
+  object-fit:contain;
 }
 .header-nav{
   display:flex;
