@@ -30,6 +30,15 @@ categories:
             install: bub install bub-feishu@main
             builtin: false
             source_path: packages/bub-feishu
+          - name: bub-tg-feed
+            description: AMQP-backed Telegram feed channel adapter for Bub message IO.
+            kind: plugin
+            logo: /telegram.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tg-feed
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: bub install bub-tg-feed@main
+            builtin: false
+            source_path: packages/bub-tg-feed
           - name: bub-qq
             description: QQ Open Platform channel adapter for Bub.
             kind: plugin
@@ -95,6 +104,24 @@ categories:
             install: bub install bub-codex@main
             builtin: false
             source_path: packages/bub-codex
+          - name: bub-cursor
+            description: Cursor CLI-backed run_model plugin with login and session resume support.
+            kind: plugin
+            logo: /cursor.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-cursor
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: bub install bub-cursor@main
+            builtin: false
+            source_path: packages/bub-cursor
+          - name: bub-extism
+            description: Extism WebAssembly bridge plugin for running Bub hooks from wasm modules.
+            kind: plugin
+            logo: /extism.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-extism
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: bub install bub-extism@main
+            builtin: false
+            source_path: packages/bub-extism
           - name: bub-github-copilot
             description: GitHub Copilot SDK-backed run_model plugin plus GitHub device-flow
               login support.
@@ -102,7 +129,7 @@ categories:
             logo: /github-copilot.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-github-copilot
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-github-copliot@main
+            install: bub install bub-github-copilot@main
             builtin: false
             source_path: packages/bub-github-copilot
           - name: bub-kimi
