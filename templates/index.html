@@ -3,9 +3,19 @@
 {% block header %}
 <header class="header">
   <div class="header-inner">
-    <div class="logo"><span>$</span> Bub Hub</div>
+    <a href="https://bub.build" class="brand-link" aria-label="Bub home">
+      <span class="brand-mark">B</span>
+      <span>Bub Hub</span>
+    </a>
+    <nav class="header-nav" aria-label="Hub links">
+      <a href="https://bub.build">Docs</a>
+      <a href="https://github.com/bubbuild" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </div>
+  <div class="hero">
+    <p class="eyebrow">Ecosystem directory</p>
+    <h1>Bub plugins, skills, distributions, and friends.</h1>
     <p class="tagline">{{ description }}</p>
-    <a href="https://bub.build" class="back-link">&larr; bub.build</a>
   </div>
 </header>
 {% endblock %}
