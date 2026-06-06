@@ -4,8 +4,8 @@
   "description": "Extract and retain semantic entities and relations from conversations",
   "author": "Bub Community",
   "license": "Apache-2.0",
-  "repository": "https://github.com/bubbuild/bub",
+  "repository": "https://github.com/yibie/bub-semantic-memory",
   "pypi": "bub-semantic-memory",
-  "documentation": "https://github.com/bubbuild/bub#semantic-memory",
+  "documentation": "https://github.com/yibie/bub-semantic-memory#readme",
   "categories": ["memory", "context"]
 }
