@@ -1,0 +1,11 @@
+{
+  "name": "semantic-memory",
+  "title": "Semantic Memory",
+  "description": "Extract and retain semantic entities and relations from conversations",
+  "author": "Bub Community",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/bubbuild/bub",
+  "pypi": "bub-semantic-memory",
+  "documentation": "https://github.com/bubbuild/bub#semantic-memory",
+  "categories": ["memory", "context"]
+}
