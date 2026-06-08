@@ -115,7 +115,8 @@ categories:
             builtin: false
             source_path: packages/bub-codex
           - name: bub-cursor
-            description: Cursor CLI-backed run_model plugin with login and session resume support.
+            description: Cursor CLI-backed run_model plugin with login and session resume
+              support.
             kind: plugin
             logo: /cursor.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-cursor
@@ -124,7 +125,8 @@ categories:
             builtin: false
             source_path: packages/bub-cursor
           - name: bub-extism
-            description: Extism WebAssembly bridge plugin for running Bub hooks from wasm modules.
+            description: Extism WebAssembly bridge plugin for running Bub hooks from wasm
+              modules.
             kind: plugin
             logo: /extism.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-extism
@@ -250,6 +252,15 @@ categories:
             install: bub install nowledge-mem-bub
             builtin: false
             source_path: nowledge-mem-bub-plugin
+          - name: bub-semantic-memory
+            description: A plugin that extracts and retains semantic entities and relations
+              from conversation histories
+            kind: plugin
+            homepage_url: https://github.com/bubbuild/bub-semantic-memory
+            repo_url: https://github.com/bubbuild/bub-semantic-memory
+            author: yibie
+            install: bub install bub-semantic-memory
+            builtin: false
   - name: Skills
     subcategories:
       - name: Built-in
@@ -338,7 +349,8 @@ categories:
               - name: agentseek-schedule-sqlalchemy
                 url: https://github.com/ob-labs/agentseek/tree/main/contrib/agentseek-schedule-sqlalchemy
           - name: philip
-            description: Bub distribution and multi-channel AI Agent gateway with CLI wiki capabilities.
+            description: Bub distribution and multi-channel AI Agent gateway with CLI wiki
+              capabilities.
             kind: distribution
             logo: /philip.png
             homepage_url: https://github.com/iodone/philip
