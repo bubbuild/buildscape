@@ -9,7 +9,7 @@ categories:
             logo: /discord.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-discord
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-discord@main
+            install: bub install bub-discord
             builtin: false
             source_path: packages/bub-discord
           - name: bub-dingtalk
@@ -27,18 +27,9 @@ categories:
             logo: /lark-suite.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-feishu
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-feishu@main
+            install: bub install bub-feishu
             builtin: false
             source_path: packages/bub-feishu
-          - name: bub-tg-feed
-            description: AMQP-backed Telegram feed channel adapter for Bub message IO.
-            kind: plugin
-            logo: /telegram.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tg-feed
-            repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-tg-feed@main
-            builtin: false
-            source_path: packages/bub-tg-feed
           - name: bub-qq
             description: QQ Open Platform channel adapter for Bub.
             kind: plugin
@@ -90,7 +81,7 @@ categories:
             logo: /mcp.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-mcp-server
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-mcp-server@main
+            install: bub install bub-mcp-server
             builtin: false
             source_path: packages/bub-mcp-server
           - name: bub-acp-server
@@ -172,7 +163,7 @@ categories:
             logo: /mcp.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-mcp
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-mcp@main
+            install: bub install bub-mcp
             builtin: false
             source_path: packages/bub-mcp
           - name: bub-schedule
@@ -181,7 +172,7 @@ categories:
             logo: /calendar.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-schedule
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-schedule@main
+            install: bub install bub-schedule
             builtin: false
             source_path: packages/bub-schedule
           - name: bub-web-search
@@ -190,18 +181,9 @@ categories:
             logo: /search.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-web-search
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-web-search@main
+            install: bub install bub-web-search
             builtin: false
             source_path: packages/bub-web-search
-          - name: bub-searxng-search
-            description: SearXNG-backed web search tool package for Bub.
-            kind: plugin
-            logo: /searxng.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-searxng-search
-            repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-searxng-search@main
-            builtin: false
-            source_path: packages/bub-searxng-search
       - name: Storage & Memory
         items:
           - name: tape-dataset-opendal
