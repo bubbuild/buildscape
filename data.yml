@@ -91,7 +91,7 @@ categories:
             logo: /acp.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-acp-server
             repo_url: https://github.com/bubbuild/bub-contrib
-            install: bub install bub-acp-server@main
+            install: bub install bub-acp-server
             builtin: false
             source_path: packages/bub-acp-server
       - name: Runtime & Workflow
