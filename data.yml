@@ -154,6 +154,17 @@ categories:
             install: bub install bub-session-prompt@main
             builtin: false
             source_path: packages/bub-session-prompt
+          - name: bub-context-budget
+            description: Proactive context-budget guard for Bub's builtin agent loop.
+            kind: plugin
+            logo: /context.png
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-context-budget
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: Frost Ming
+            license: MIT
+            install: bub install bub-context-budget@main
+            builtin: false
+            source_path: packages/bub-context-budget
       - name: Tools
         items:
           - name: bub-mcp
