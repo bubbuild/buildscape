@@ -165,6 +165,17 @@ categories:
             install: bub install bub-context-budget@main
             builtin: false
             source_path: packages/bub-context-budget
+          - name: bub-dsh
+            description: DeepSeek Harness runner for Bub
+            kind: plugin
+            logo: /dsh.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-dsh
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: Frost Ming
+            license: MIT
+            install: bub install bub-dsh@main
+            builtin: false
+            source_path: packages/bub-dsh
       - name: Tools
         items:
           - name: bub-mcp
