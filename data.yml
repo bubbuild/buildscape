@@ -94,6 +94,17 @@ categories:
             install: bub install bub-acp-server
             builtin: false
             source_path: packages/bub-acp-server
+          - name: bub-slack
+            description: Slack channel for Bub
+            kind: plugin
+            logo: /Slack_icon_2019.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/blob/main/packages/bub-slack
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: yiling
+            license: Apache-2.0
+            install: bub install bub-slack@main
+            builtin: false
+            source_path: packages/bub-slack
       - name: Runtime & Workflow
         items:
           - name: bub-codex
