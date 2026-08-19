@@ -12,6 +12,7 @@ from jinja2 import Environment, FileSystemLoader
 ROOT = Path(__file__).parent
 TEMPLATES_DIR = ROOT / "templates"
 LOGOS_DIR = ROOT / "logos"
+ASSETS_DIR = ROOT / "assets"
 DIST_DIR = ROOT / "dist"
 
 VALID_KINDS = {"plugin", "skill", "distribution", "friend"}
@@ -80,21 +81,23 @@ def build():
     template = env.get_template("index.html")
     html = template.render(
         title="Bub Hub — Ecosystem Directory",
-        description="Ecosystem directory for Bub plugins, skills, distributions, and friends.",
+        description="Build with Bub, powered by community.",
         categories=categories,
         total_items=total_items,
+        cat_counts=cat_counts,
         cat_counts_json=json.dumps(cat_counts),
     )
 
     DIST_DIR.mkdir(exist_ok=True)
     (DIST_DIR / "index.html").write_text(html)
 
-    # Copy logos
-    dist_logos = DIST_DIR / "logos"
-    if LOGOS_DIR.is_dir():
-        if dist_logos.exists():
-            shutil.rmtree(dist_logos)
-        shutil.copytree(LOGOS_DIR, dist_logos)
+    # Copy static assets
+    for source_dir in (LOGOS_DIR, ASSETS_DIR):
+        target_dir = DIST_DIR / source_dir.name
+        if source_dir.is_dir():
+            if target_dir.exists():
+                shutil.rmtree(target_dir)
+            shutil.copytree(source_dir, target_dir)
 
     print(f"Built hub → {DIST_DIR / 'index.html'}")
 

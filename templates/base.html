@@ -5,17 +5,37 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{{ title }}</title>
 <meta name="description" content="{{ description }}">
+<link rel="icon" href="logos/bub-logo.png" type="image/png">
+<meta name="theme-color" content="#ffffff" id="theme-color">
+<script>
+(function() {
+  var theme = "light";
+  try {
+    var stored = localStorage.getItem("starlight-theme");
+    theme = stored === "dark" || (!stored && window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ? "dark"
+      : "light";
+  } catch (error) {
+    theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+  document.documentElement.dataset.theme = theme;
+  document.documentElement.style.colorScheme = theme;
+  document.getElementById("theme-color").content = theme === "dark" ? "#252525" : "#ffffff";
+})();
+</script>
 <style>
 {% include "style.css" %}
 </style>
 </head>
 <body>
 
+<a class="skip-link" href="#main-content">Skip to main content</a>
+
 {% block header %}{% endblock %}
 
-{% block controls %}{% endblock %}
-
-{% block content %}{% endblock %}
+<main id="main-content">
+{% block main %}{% endblock %}
+</main>
 
 {% block footer %}{% endblock %}
 

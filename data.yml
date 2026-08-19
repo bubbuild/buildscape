@@ -346,7 +346,7 @@ categories:
             logo: /oceanbase.png
             homepage_url: https://github.com/ob-labs/agentseek
             repo_url: https://github.com/ob-labs/agentseek
-            docs_url: ob-labs.github.io/agentseek/
+            docs_url: https://ob-labs.github.io/agentseek/
             license: Apache-2.0
             builtin: false
             bundled_plugins:
