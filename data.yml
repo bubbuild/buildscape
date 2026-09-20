@@ -107,6 +107,15 @@ categories:
             source_path: packages/bub-slack
       - name: Runtime & Workflow
         items:
+          - name: bub-hol-guard
+            description: Fail-closed HOL Guard policy gate for Bub bash tool calls.
+            kind: plugin
+            homepage_url: https://github.com/hashgraph-online/hol-guard-plugin
+            repo_url: https://github.com/hashgraph-online/hol-guard-plugin
+            author: Hashgraph Online
+            license: Apache-2.0
+            install: bub install hashgraph-online/hol-guard-plugin
+            builtin: false
           - name: bub-codex
             description: Delegates Bub model execution to the Codex CLI.
             kind: plugin
