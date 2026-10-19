@@ -1,0 +1,71 @@
+name: Sync Bub contrib
+
+on:
+  schedule:
+    - cron: '41 3 * * 1'
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Open a draft PR (default branch only)
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync-bub-contrib
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for pending sync
+        id: pending
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          count=$(gh pr list --repo "$GITHUB_REPOSITORY" --state open --head catalog/bub-contrib --json number --jq length)
+          echo "count=$count" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        if: steps.pending.outputs.count == '0'
+        with:
+          repository: bubbuild/bub-contrib
+          ref: main
+          path: .sync-source
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@v6
+        if: steps.pending.outputs.count == '0'
+      - name: Sync and validate
+        if: steps.pending.outputs.count == '0'
+        id: sync
+        run: |
+          echo "source=$(git -C .sync-source rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          uv sync --frozen
+          uv run --frozen python -m unittest discover -s tests
+          uv run --frozen python scripts/sync_bub_contrib.py .sync-source
+          uv run --frozen python build.py
+          if ! git diff --quiet -- data.yml .github/bub-contrib-sync.json; then
+            echo 'changed=true' >> "$GITHUB_OUTPUT"
+          fi
+      - name: Open draft catalog update
+        if: >-
+          steps.sync.outputs.changed == 'true' && github.ref == 'refs/heads/main' &&
+          (github.event_name == 'schedule' || inputs.publish)
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8
+        with:
+          branch: catalog/bub-contrib
+          base: main
+          draft: always-true
+          add-paths: |
+            data.yml
+            .github/bub-contrib-sync.json
+          commit-message: 'chore(catalog): sync Bub contrib plugins'
+          title: 'chore(catalog): sync Bub contrib plugins'
+          body: |
+            Sync plugin metadata from bubbuild/bub-contrib@${{ steps.sync.outputs.source }} using `scripts/sync_bub_contrib.py`.
+
+            Validation: sync behavior tests and site build pass. Existing curated entries and manual field overrides remain authoritative. Maintainers review and merge this draft.

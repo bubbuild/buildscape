@@ -72,3 +72,22 @@ categories:
 | `bundled_plugins` | list | | `[{name, url}]` for distributions (max 3 shown) |
 
 Build validates required fields, `kind` enum, and rejects unknown fields.
+
+## Bub contrib updates
+
+[Sync Bub contrib](.github/workflows/sync-bub-contrib.yml) reads `packages/*/pyproject.toml` from `bubbuild/bub-contrib` main each Monday at 03:41 UTC, or on manual dispatch. It imports packages declaring a `bub` entry point into the existing Plugins groups. It reads metadata without executing upstream code. Package descriptions, authors, SPDX license strings, source links, and `bub install NAME@main` commands supply new entries; missing descriptions get a package-name fallback. New entries use the existing `logos/plugin.svg` until a maintainer selects a project logo. Skills, third-party entries, existing logos, and existing curated package entries stay under manual maintenance.
+
+The sync deduplicates package names (including case, hyphen, underscore, and dot variants) and contrib source paths across groups. It records only newly imported entries in `.github/bub-contrib-sync.json`. Later runs update fields that still match their last generated values; manual overrides and deleted entries stay untouched. Missing upstream packages remain in the catalog for manual retirement. Keep the state file when editing or moving generated entries.
+
+Changed data passes sync tests and the site build before the workflow opens a draft PR on `catalog/bub-contrib`. An open sync PR pauses further updates so reviewer edits survive. Unchanged runs create no commit, PR, or comment. Maintainers merge updates manually. The repository must allow GitHub Actions to create pull requests in **Settings > Actions > General > Workflow permissions**; the workflow uses `GITHUB_TOKEN` with contents and pull request write permissions and requires no model secrets. Token-created PRs do not trigger ordinary PR workflows, so the sync runs validation before publication. Schedules become active after this workflow reaches the default branch.
+
+To reproduce locally with a separate contrib checkout:
+
+```bash
+uv sync --frozen
+uv run --frozen python scripts/sync_bub_contrib.py ../bub-contrib
+uv run --frozen python -m unittest discover -s tests
+uv run --frozen python build.py
+```
+
+For a workflow dry run, manually dispatch **Sync Bub contrib** with `publish` disabled. Publication also requires running on `main`.
