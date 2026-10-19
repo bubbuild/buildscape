@@ -72,3 +72,5 @@ categories:
 | `bundled_plugins` | list | | `[{name, url}]` for distributions (max 3 shown) |
 
 Build validates required fields, `kind` enum, and rejects unknown fields.
+
+The catalog sync runs weekly on Mondays at 03:41 UTC or manually, proposing relevant bub-contrib updates as draft PRs and staying quiet when nothing changes.
