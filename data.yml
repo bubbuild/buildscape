@@ -4,7 +4,7 @@ categories:
       - name: Channels
         items:
           - name: bub-discord
-            description: Discord channel for Bub
+            description: Discord channel adapter for Bub message IO.
             kind: plugin
             logo: /discord.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-discord
@@ -12,9 +12,8 @@ categories:
             install: bub install bub-discord
             builtin: false
             source_path: packages/bub-discord
-            author: Frost Ming
           - name: bub-dingtalk
-            description: DingTalk channel for Bub
+            description: DingTalk Stream Mode channel adapter for Bub message IO.
             kind: plugin
             logo: /dingtalk-site.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-dingtalk
@@ -22,9 +21,8 @@ categories:
             install: bub install bub-dingtalk@main
             builtin: false
             source_path: packages/bub-dingtalk
-            author: Chojan Shang
           - name: bub-feishu
-            description: Feishu channel for Bub
+            description: Feishu channel adapter for Bub message IO.
             kind: plugin
             logo: /lark-suite.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-feishu
@@ -32,9 +30,8 @@ categories:
             install: bub install bub-feishu
             builtin: false
             source_path: packages/bub-feishu
-            author: Kyle Liu
           - name: bub-qq
-            description: QQ Open Platform channel for Bub
+            description: QQ Open Platform channel adapter for Bub.
             kind: plugin
             logo: /qq.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-qq
@@ -42,9 +39,8 @@ categories:
             install: bub install bub-qq@main
             builtin: false
             source_path: packages/bub-qq
-            author: wzhongyun
           - name: bub-wechat
-            description: Wechat Agent channel for Bub
+            description: WeChat channel adapter for Bub message IO.
             kind: plugin
             logo: /wechat.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wechat
@@ -52,9 +48,8 @@ categories:
             install: bub install bub-wechat@main
             builtin: false
             source_path: packages/bub-wechat
-            author: Frost Ming
           - name: bub-wecom
-            description: WeCom channel for Bub
+            description: WeCom channel adapter for Bub message IO.
             kind: plugin
             logo: /wecom.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-wecom
@@ -62,7 +57,6 @@ categories:
             install: bub install bub-wecom@main
             builtin: false
             source_path: packages/bub-wecom
-            author: Ruter
           - name: bub-xiaoai
             description: Xiaomi XiaoAi speaker channel plugin with message polling and
               device TTS replies.
@@ -82,7 +76,7 @@ categories:
             install: bub install bubbuild/bub-folotoy
             builtin: false
           - name: bub-mcp-server
-            description: Expose Bub as an SSE MCP server
+            description: Expose Bub as an MCP server
             kind: plugin
             logo: /mcp.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-mcp-server
@@ -90,9 +84,9 @@ categories:
             install: bub install bub-mcp-server
             builtin: false
             source_path: packages/bub-mcp-server
-            author: Frost Ming
           - name: bub-acp-server
-            description: Expose Bub as an ACP agent
+            description: Expose Bub as an Agent Client Protocol agent for ACP-compatible
+              editors.
             kind: plugin
             logo: /acp.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-acp-server
@@ -100,7 +94,6 @@ categories:
             install: bub install bub-acp-server
             builtin: false
             source_path: packages/bub-acp-server
-            author: Frost Ming
           - name: bub-slack
             description: Slack channel for Bub
             kind: plugin
@@ -132,9 +125,9 @@ categories:
             install: bub install bub-codex@main
             builtin: false
             source_path: packages/bub-codex
-            author: Frost Ming
           - name: bub-cursor
-            description: Cursor-backed run_model plugin for Bub
+            description: Cursor CLI-backed run_model plugin with login and session resume
+              support.
             kind: plugin
             logo: /cursor.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-cursor
@@ -142,9 +135,9 @@ categories:
             install: bub install bub-cursor@main
             builtin: false
             source_path: packages/bub-cursor
-            author: tssujt
           - name: bub-extism
-            description: Extism WebAssembly bridge plugin for Bub
+            description: Extism WebAssembly bridge plugin for running Bub hooks from wasm
+              modules.
             kind: plugin
             logo: /extism.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-extism
@@ -152,9 +145,9 @@ categories:
             install: bub install bub-extism@main
             builtin: false
             source_path: packages/bub-extism
-            author: Bub Build contributors
           - name: bub-github-copilot
-            description: GitHub Copilot SDK-backed run_model plugin for Bub
+            description: GitHub Copilot SDK-backed run_model plugin plus GitHub device-flow
+              login support.
             kind: plugin
             logo: /github-copilot.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-github-copilot
@@ -162,9 +155,8 @@ categories:
             install: bub install bub-github-copilot@main
             builtin: false
             source_path: packages/bub-github-copilot
-            author: PsiACE
           - name: bub-kimi
-            description: Kimi CLI model plugin for bub
+            description: Kimi CLI-backed run_model plugin with session resume support.
             kind: plugin
             logo: /kimi.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-kimi
@@ -172,9 +164,9 @@ categories:
             install: bub install bub-kimi@main
             builtin: false
             source_path: packages/bub-kimi
-            author: Mengxin Liu
           - name: bub-session-prompt
-            description: Bub plugin to support session-specific system prompt
+            description: Session-specific system prompt plugin sourced from local Bub
+              session state.
             kind: plugin
             logo: /bub-light.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-session-prompt
@@ -182,9 +174,8 @@ categories:
             install: bub install bub-session-prompt@main
             builtin: false
             source_path: packages/bub-session-prompt
-            author: Frost Ming
           - name: bub-context-budget
-            description: Proactive context-budget guard for Bub LLM calls
+            description: Proactive context-budget guard for Bub's builtin agent loop.
             kind: plugin
             logo: /context.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-context-budget
@@ -195,7 +186,7 @@ categories:
             builtin: false
             source_path: packages/bub-context-budget
           - name: bub-dsh
-            description: DeepSeek Harness SDK-backed streaming model plugin for Bub
+            description: DeepSeek Harness runner for Bub
             kind: plugin
             logo: /dsh.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-dsh
@@ -205,62 +196,11 @@ categories:
             install: bub install bub-dsh@main
             builtin: false
             source_path: packages/bub-dsh
-          - name: bub-agent-plugins
-            kind: plugin
-            logo: /plugin.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-agent-plugins
-            repo_url: https://github.com/bubbuild/bub-contrib
-            source_path: packages/bub-agent-plugins
-            install: bub install bub-agent-plugins@main
-            builtin: false
-            description: Load portable Agent Plugins into Bub
-            author: Bub contributors
-          - name: bub-docker-env
-            kind: plugin
-            logo: /docker.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-docker-env
-            repo_url: https://github.com/bubbuild/bub-contrib
-            source_path: packages/bub-docker-env
-            install: bub install bub-docker-env@main
-            builtin: false
-            description: Run Bub sessions' bash, fs and code-mode tools in Docker containers
-            author: wzhongyun
-          - name: bub-env
-            kind: plugin
-            logo: /plugin.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-env
-            repo_url: https://github.com/bubbuild/bub-contrib
-            source_path: packages/bub-env
-            install: bub install bub-env@main
-            builtin: false
-            description: Inject environment variables from the Bub config file at startup
-            author: wzhongyun
-          - name: bub-monty-env
-            kind: plugin
-            logo: /plugin.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-monty-env
-            repo_url: https://github.com/bubbuild/bub-contrib
-            source_path: packages/bub-monty-env
-            install: bub install bub-monty-env@main
-            builtin: false
-            description: Run Bub's code-mode run_code in Monty, a sandboxed Python interpreter,
-              on top of any Bub environment
-            author: Frost Ming
-          - name: bub-sandbox-env
-            kind: plugin
-            logo: /plugin.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-sandbox-env
-            repo_url: https://github.com/bubbuild/bub-contrib
-            source_path: packages/bub-sandbox-env
-            install: bub install bub-sandbox-env@main
-            builtin: false
-            description: Run Bub sessions' bash, fs and code-mode tools in a lightweight local
-              sandbox (macOS Seatbelt, Linux bubblewrap)
-            author: Frost Ming
       - name: Tools
         items:
           - name: bub-mcp
-            description: Expose configured MCP servers as Bub tools
+            description: Exposes configured MCP servers as Bub tools, with `bub mcp`
+              commands to list, add, and remove server configs.
             kind: plugin
             logo: /mcp.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-mcp
@@ -268,9 +208,8 @@ categories:
             install: bub install bub-mcp
             builtin: false
             source_path: packages/bub-mcp
-            author: Frost Ming
           - name: bub-schedule
-            description: Scheduling tools for Bub
+            description: Scheduling channel and tools backed by APScheduler.
             kind: plugin
             logo: /calendar.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-schedule
@@ -278,9 +217,8 @@ categories:
             install: bub install bub-schedule
             builtin: false
             source_path: packages/bub-schedule
-            author: Frost Ming
           - name: bub-web-search
-            description: Web search tools for Bub
+            description: Web search tool package for Bub.
             kind: plugin
             logo: /search.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-web-search
@@ -288,12 +226,11 @@ categories:
             install: bub install bub-web-search
             builtin: false
             source_path: packages/bub-web-search
-            author: Frost Ming
       - name: Storage & Memory
         items:
           - name: tape-dataset-opendal
-            description: Backend-agnostic tape dataset export over the standard Bub tape store
-              interface
+            description: Exports Bub and Republic tapes to backend-agnostic dataset
+              artifacts through OpenDAL.
             kind: plugin
             logo: /bub-light.png
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/tape-dataset-opendal
@@ -301,9 +238,8 @@ categories:
             install: bub install tape-dataset-opendal@main
             builtin: false
             source_path: packages/tape-dataset-opendal
-            author: Chojan Shang
           - name: bub-tapestore-redis
-            description: Redis tape store plugin for Bub
+            description: Redis-backed tape store plugin for Bub conversation history.
             kind: plugin
             logo: /redis.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-redis
@@ -311,9 +247,8 @@ categories:
             install: bub install bub-tapestore-redis@main
             builtin: false
             source_path: packages/bub-tapestore-redis
-            author: Johnson Lee
           - name: bub-tapestore-sqlalchemy
-            description: SQLAlchemy tape store plugin for Bub
+            description: SQLAlchemy-backed tape store plugin for Bub conversation history.
             kind: plugin
             logo: /sqlalchemy.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlalchemy
@@ -321,9 +256,8 @@ categories:
             install: bub install bub-tapestore-sqlalchemy@main
             builtin: false
             source_path: packages/bub-tapestore-sqlalchemy
-            author: Chojan Shang
           - name: bub-tapestore-sqlite
-            description: SQLite tape store plugin for Bub
+            description: SQLite-backed tape store plugin for Bub conversation history.
             kind: plugin
             logo: /sqlite.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-sqlite
@@ -331,7 +265,6 @@ categories:
             install: bub install bub-tapestore-sqlite@main
             builtin: false
             source_path: packages/bub-tapestore-sqlite
-            author: Chojan Shang
           - name: nowledge-mem-bub
             description: Bring your cross-tool knowledge into Bub, and share what you learn
               in Bub with every other tool.
@@ -352,16 +285,6 @@ categories:
             author: yibie
             install: bub install bub-semantic-memory
             builtin: false
-          - name: bub-tapestore-otel
-            kind: plugin
-            logo: /opentelemetry.svg
-            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-otel
-            repo_url: https://github.com/bubbuild/bub-contrib
-            source_path: packages/bub-tapestore-otel
-            install: bub install bub-tapestore-otel@main
-            builtin: false
-            description: OpenTelemetry projection layer for Bub tape stores
-            author: Chojan Shang
   - name: Skills
     subcategories:
       - name: Built-in

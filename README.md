@@ -73,4 +73,4 @@ categories:
 
 Build validates required fields, `kind` enum, and rejects unknown fields.
 
-The catalog checks bub-contrib every Monday at 03:41 UTC and proposes metadata updates and new plugins in draft PRs. Existing presentation choices stay curated; unchanged runs stay quiet, and an open sync PR pauses further updates. GitHub Actions must be allowed to create PRs.
+The catalog sync runs weekly on Mondays at 03:41 UTC or manually, proposing relevant bub-contrib updates as draft PRs and staying quiet when nothing changes.
