@@ -196,6 +196,59 @@ categories:
             install: bub install bub-dsh@main
             builtin: false
             source_path: packages/bub-dsh
+          - name: bub-agent-plugins
+            description: Load portable Agent Plugins into Bub.
+            kind: plugin
+            logo: /plugin.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-agent-plugins
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: Bub contributors
+            install: bub install bub-agent-plugins@main
+            builtin: false
+            source_path: packages/bub-agent-plugins
+          - name: bub-env
+            description: Inject environment variables from the Bub config file at startup.
+            kind: plugin
+            logo: /plugin.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-env
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: wzhongyun
+            install: bub install bub-env@main
+            builtin: false
+            source_path: packages/bub-env
+          - name: bub-docker-env
+            description: Run Bub sessions' bash, fs, and code-mode tools in Docker
+              containers.
+            kind: plugin
+            logo: /docker.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-docker-env
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: wzhongyun
+            install: bub install bub-docker-env@main
+            builtin: false
+            source_path: packages/bub-docker-env
+          - name: bub-sandbox-env
+            description: Run Bub sessions' bash, fs, and code-mode tools in a local
+              Seatbelt or bubblewrap sandbox.
+            kind: plugin
+            logo: /plugin.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-sandbox-env
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: Frost Ming
+            install: bub install bub-sandbox-env@main
+            builtin: false
+            source_path: packages/bub-sandbox-env
+          - name: bub-monty-env
+            description: Run Bub's code-mode run_code in Monty, a sandboxed Python
+              interpreter.
+            kind: plugin
+            logo: /plugin.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-monty-env
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: Frost Ming
+            install: bub install bub-monty-env@main
+            builtin: false
+            source_path: packages/bub-monty-env
       - name: Tools
         items:
           - name: bub-mcp
@@ -285,6 +338,17 @@ categories:
             author: yibie
             install: bub install bub-semantic-memory
             builtin: false
+          - name: bub-tapestore-otel
+            description: Project committed tape writes to OpenTelemetry through the
+              OTLP HTTP exporter.
+            kind: plugin
+            logo: /opentelemetry.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-otel
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: Chojan Shang
+            install: bub install bub-tapestore-otel@main
+            builtin: false
+            source_path: packages/bub-tapestore-otel
   - name: Skills
     subcategories:
       - name: Built-in
