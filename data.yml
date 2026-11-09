@@ -249,6 +249,17 @@ categories:
             install: bub install bub-monty-env@main
             builtin: false
             source_path: packages/bub-monty-env
+          - name: bub-herdr
+            description: Reports `bub chat` status to herdr through OSC 7501 so the
+              Herdr app shows Bub as an agent.
+            kind: plugin
+            logo: /herdr.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-herdr
+            repo_url: https://github.com/bubbuild/bub-contrib
+            author: qiaoborui
+            install: bub install bub-herdr@main
+            builtin: false
+            source_path: packages/bub-herdr
       - name: Tools
         items:
           - name: bub-mcp
