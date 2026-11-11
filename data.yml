@@ -228,8 +228,8 @@ categories:
             builtin: false
             source_path: packages/bub-docker-env
           - name: bub-sandbox-env
-            description: Run Bub sessions' bash, fs, and code-mode tools in a local
-              Seatbelt or bubblewrap sandbox.
+            description: Run Bub sessions' bash, fs, and code-mode tools in a local Seatbelt
+              or bubblewrap sandbox.
             kind: plugin
             logo: /plugin.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-sandbox-env
@@ -250,8 +250,8 @@ categories:
             builtin: false
             source_path: packages/bub-monty-env
           - name: bub-herdr
-            description: Reports `bub chat` status to herdr through OSC 7501 so the
-              Herdr app shows Bub as an agent.
+            description: Reports `bub chat` status to herdr through OSC 7501 so the Herdr
+              app shows Bub as an agent.
             kind: plugin
             logo: /herdr.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-herdr
@@ -290,6 +290,16 @@ categories:
             install: bub install bub-web-search
             builtin: false
             source_path: packages/bub-web-search
+          - name: bub-walkman
+            description: Play Bub tapes as an agent timeline in the browser, live or
+              replayed.
+            kind: plugin
+            logo: /favicon.svg
+            homepage_url: https://github.com/bubbuild/bub-walkman
+            repo_url: https://github.com/bubbuild/bub-walkman
+            license: Apache-2.0
+            install: uvx bub-walkman
+            builtin: false
       - name: Storage & Memory
         items:
           - name: tape-dataset-opendal
@@ -350,8 +360,8 @@ categories:
             install: bub install bub-semantic-memory
             builtin: false
           - name: bub-tapestore-otel
-            description: Project committed tape writes to OpenTelemetry through the
-              OTLP HTTP exporter.
+            description: Project committed tape writes to OpenTelemetry through the OTLP
+              HTTP exporter.
             kind: plugin
             logo: /opentelemetry.svg
             homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-tapestore-otel
@@ -466,17 +476,4 @@ categories:
             repo_url: https://github.com/oilbeater/visual-base
             license: MIT
             install: uv tool install visual-base
-            builtin: false
-  - name: Friends
-    subcategories:
-      - name: Adjacent Projects
-        items:
-          - name: any-llm
-            description: Unified API and optional gateway for working with multiple LLM
-              providers through one interface.
-            kind: friend
-            logo: /any-llm.png
-            homepage_url: https://any-llm.ai
-            repo_url: https://github.com/mozilla-ai/any-llm
-            docs_url: https://mozilla-ai.github.io/any-llm/
             builtin: false
