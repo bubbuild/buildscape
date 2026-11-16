@@ -105,6 +105,16 @@ categories:
             install: bub install bub-slack@main
             builtin: false
             source_path: packages/bub-slack
+          - name: bub-ag-ui
+            description: Expose Bub agents to browser frontends over the AG-UI
+              protocol with SSE streaming.
+            kind: plugin
+            logo: /ag-ui.svg
+            homepage_url: https://github.com/bubbuild/bub-contrib/tree/main/packages/bub-ag-ui
+            repo_url: https://github.com/bubbuild/bub-contrib
+            install: bub install bub-ag-ui@main
+            builtin: false
+            source_path: packages/bub-ag-ui
       - name: Runtime & Workflow
         items:
           - name: bub-hol-guard

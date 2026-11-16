@@ -1,0 +1,9 @@
+<!-- Source: https://github.com/ag-ui-protocol/ag-ui/blob/main/docs/logo/ag-ui-light.svg (MIT).
+     AG-UI mark cropped from the official lockup for the card logo slot; AG-UI name and logo belong to their owners. -->
+<svg role="img" aria-label="AG-UI Protocol logo" xmlns="http://www.w3.org/2000/svg" viewBox="0.34 2.34 56.32 65.32" preserveAspectRatio="xMidYMid meet">
+  <g fill="none" stroke="#000000" stroke-width="3.3125" transform="translate(2, 4)">
+    <path d="M0,25.9335975 L16.5448881,6.52325783e-15 C40.848296,5.37332138 53,8.05998207 53,8.05998207 L43.1229639,62 L0,25.9335975 Z" stroke-linejoin="round"/>
+    <line x1="16.5828221" y1="-1.07552856e-15" x2="43.2453988" y2="62"/>
+    <line x1="0" y1="25.9335975" x2="53" y2="8.48421053"/>
+  </g>
+</svg>
